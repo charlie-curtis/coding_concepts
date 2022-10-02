@@ -7,7 +7,6 @@ import java.util.Optional;
 
 public class TowersOfHanoi {
 
-
   public static void main(String[] args) {
 
     solve(12, PEG.LEFT, PEG.RIGHT);
@@ -31,7 +30,7 @@ public class TowersOfHanoi {
     makeMove(from, to);
 
     //stack all the moves back onto this one
-    solve(diskCount -1, pivot, to);
+    solve(diskCount - 1, pivot, to);
   }
 
   private static void makeMove(PEG from, PEG to) {
@@ -39,16 +38,15 @@ public class TowersOfHanoi {
     moveCount++;
   }
 
-  private static PEG getPivot(PEG from, PEG to)
-  {
+  private static PEG getPivot(PEG from, PEG to) {
     ArrayList<PEG> allPegs = new ArrayList<>(List.of(PEG.LEFT, PEG.RIGHT, PEG.MIDDLE));
     Optional<PEG> pivot = allPegs.stream().filter(peg -> !peg.equals(from) && !peg.equals(to)).findFirst();
     return pivot.get();
   }
 
   enum PEG {
-   LEFT,
-   RIGHT,
-   MIDDLE
+    LEFT,
+    RIGHT,
+    MIDDLE
   }
 }

@@ -1,5 +1,7 @@
 package PriorityQueues;
+
 import java.util.PriorityQueue;
+
 public class Priority {
   public static void main(String[] args) {
     PriorityQueue<Integer> queue = new PriorityQueue<>();
@@ -9,7 +11,7 @@ public class Priority {
     queue.add(12345);
     queue.add(1);
     Integer i;
-    while((i = queue.poll()) != null) {
+    while ((i = queue.poll()) != null) {
       System.out.println(i);
     }
   }
