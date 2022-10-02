@@ -1,8 +1,9 @@
+package Sorting;
 public class SelectionSort extends Sorting {
 
 	//java operates on the object themselves, so you don't have to return the array
 	public static void sort(int[] array){
-	 
+
 		for(int i = 0; i<array.length-1; i++){
 			int minValue = array[i];
 			int replacementIndex = i;
@@ -17,7 +18,7 @@ public class SelectionSort extends Sorting {
 			array[replacementIndex] = temp;
 		}
 	}
-	
+
 	public static void main(String[] args) throws Exception{
 
 		int[] array1 = {11,7,9,4,2,0};
@@ -29,5 +30,5 @@ public class SelectionSort extends Sorting {
 			System.out.println("I am NOT sorted");
 		}
 	}
-	
+
 }
