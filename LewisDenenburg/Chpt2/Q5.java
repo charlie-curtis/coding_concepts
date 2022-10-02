@@ -1,15 +1,14 @@
 package LewisDenenburg.Chpt2;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 //multiply two base 10 numerals together
 public class Q5 {
   public static void main(String[] args) {
     int[] x = {0, 2}; //20
     int[] y = {3, 1}; //13
-    int[] result = new int[2 * x.length];
-    result = gradeSchoolMultiply(x, y);
-    for (int i = result.length - 1; i >= 0; i--) {
-      System.out.print(result[i]);
-    }
+    IntStream.of(gradeSchoolMultiply(x, y)).forEach(System.out::print);
   }
 
   public static int[] gradeSchoolMultiply(int[] x, int[] y) {
