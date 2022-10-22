@@ -7,7 +7,7 @@ public class Palindrome {
   public static void main(String[] args) {
     int[] inputs = {1001, 1, 2020};
     Arrays.stream(inputs).forEach(
-      i -> System.out.printf("testing %d for primality: %b%n", i, isPalindrome(i))
+      i -> System.out.printf("testing %d for palindrome: %b%n", i, isPalindrome(i))
     );
   }
 
