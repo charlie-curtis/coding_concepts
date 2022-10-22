@@ -1,6 +1,6 @@
 package Sorting;
 
-public class InsertionSort extends SortValidator {
+public class InsertionSort {
 
   //java operates on the object themselves, so you don't have to return the array
   public static void sort(int[] array) {

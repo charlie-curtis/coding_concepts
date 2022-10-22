@@ -1,7 +1,7 @@
 package Sorting;
 
 public class BubbleSort {
-  public static int[] sort(int[] input) {
+  public static void sort(int[] input) {
 
     int temp;
     for (int i = 0; i < (input.length); i++) {
@@ -15,7 +15,6 @@ public class BubbleSort {
         }
       }
     }
-    return input;
   }
 
   public static void main(String[] args) throws Exception {
