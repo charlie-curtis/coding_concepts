@@ -1,6 +1,6 @@
 package Sorting;
 
-public class InsertionSort extends Sorting {
+public class InsertionSort extends SortValidator {
 
   //java operates on the object themselves, so you don't have to return the array
   public static void sort(int[] array) {
@@ -16,9 +16,11 @@ public class InsertionSort extends Sorting {
 
   public static void main(String[] args) throws Exception {
 
-    int[] array1 = {7, 3, 9, 4, 2, 0, 13, 28, 109, -3, -10, -17, -39};
-    sort(array1);
-    assertIsSorted(array1);
-  }
+    int[] test = {7, 3, 9, 4, 2, 0, 13, 28, 109, -3, -10, -17, -39};
 
+    sort(test);
+
+    SortValidator validator = new SortValidator();
+    validator.validate(test);
+  }
 }

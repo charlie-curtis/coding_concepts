@@ -3,7 +3,7 @@ package Sorting;
 import java.util.Arrays;
 
 
-public class MergeSort extends Sorting {
+public class MergeSort extends SortValidator {
 
   public static int[] sort(int[] array) {
 
@@ -46,10 +46,13 @@ public class MergeSort extends Sorting {
     return temp;
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
 
-    int[] test = {3, 10, 5, 9, 103, -23, 0, -1, -1, -2, -3, -4, -5};
-    test = sort(test);
-    assertIsSorted(test);
+    int[] test = {7, 3, 9, 4, 2, 0, 13, 28, 109, -3, -10, -17, -39};
+
+    sort(test);
+
+    SortValidator validator = new SortValidator();
+    validator.validate(test);
   }
 }

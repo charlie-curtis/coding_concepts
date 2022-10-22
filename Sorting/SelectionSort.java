@@ -1,6 +1,6 @@
 package Sorting;
 
-public class SelectionSort extends Sorting {
+public class SelectionSort {
 
   //java operates on the object themselves, so you don't have to return the array
   public static void sort(int[] array) {
@@ -19,13 +19,14 @@ public class SelectionSort extends Sorting {
       array[replacementIndex] = temp;
     }
   }
-
   public static void main(String[] args) throws Exception {
 
-    int[] array1 = {11, 7, 9, 4, 2, 0};
-    sort(array1);
-    assertIsSorted(array1);
-    ;
+    int[] test = {7, 3, 9, 4, 2, 0, 13, 28, 109, -3, -10, -17, -39};
+
+    sort(test);
+
+    SortValidator validator = new SortValidator();
+    validator.validate(test);
   }
 
 }
