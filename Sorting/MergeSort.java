@@ -13,8 +13,7 @@ public class MergeSort {
     }
   }
 
-  private static int[] sortHelper(int[] array)
-  {
+  private static int[] sortHelper(int[] array) {
     if (array.length == 1) {
       return array;
     }

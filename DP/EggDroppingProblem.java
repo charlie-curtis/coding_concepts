@@ -1,9 +1,10 @@
+package DP;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
 
 public class EggDroppingProblem {
-
 
   private HashMap<Integer, Integer> minTosses = new HashMap<Integer, Integer>();
 

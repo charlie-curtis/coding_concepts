@@ -2,6 +2,21 @@ package ga_prep;
 
 public class longest_subsequence {
 
+  public static void main(String[] args) {
+
+    int[] numbers = {2, 2, 2, 2, 2};
+    //int[] numbers = {7,6,5,4,3,2,1};
+    longest_subsequence sol = new longest_subsequence();
+    int result = sol.Solution(numbers);
+    System.out.println();
+    System.out.println();
+    System.out.println(result);
+    //1,2,3,4,7
+    //1,2,4,5,7
+    //1,2,3,5,7
+    //index 5,4,4
+  }
+
   private int Solution(int[] nums) {
 
     if (nums.length == 0) {
@@ -44,20 +59,5 @@ public class longest_subsequence {
       }
     }
     return overallCount;
-  }
-
-  public static void main(String[] args) {
-
-    int[] numbers = {2, 2, 2, 2, 2};
-    //int[] numbers = {7,6,5,4,3,2,1};
-    longest_subsequence sol = new longest_subsequence();
-    int result = sol.Solution(numbers);
-    System.out.println();
-    System.out.println();
-    System.out.println(result);
-    //1,2,3,4,7
-    //1,2,4,5,7
-    //1,2,3,5,7
-    //index 5,4,4
   }
 }

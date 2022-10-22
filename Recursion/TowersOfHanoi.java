@@ -7,14 +7,14 @@ import java.util.Optional;
 
 public class TowersOfHanoi {
 
+  private static int moveCount = 0;
+
   public static void main(String[] args) {
 
     solve(12, PEG.LEFT, PEG.RIGHT);
     System.out.printf("There were %d moves\n", moveCount);
 
   }
-
-  private static int moveCount = 0;
 
   private static void solve(int diskCount, PEG from, PEG to) {
 

@@ -19,6 +19,7 @@ public class SelectionSort {
       array[replacementIndex] = temp;
     }
   }
+
   public static void main(String[] args) throws Exception {
 
     int[] test = {7, 3, 9, 4, 2, 0, 13, 28, 109, -3, -10, -17, -39};
