@@ -1,8 +1,8 @@
-package PriorityQueues;
+package DataStructures;
 
 import java.util.PriorityQueue;
 
-public class Priority {
+public class myPriorityQueue {
   public static void main(String[] args) {
     PriorityQueue<Integer> queue = new PriorityQueue<>();
 
